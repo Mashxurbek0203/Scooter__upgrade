@@ -1,0 +1,67 @@
+.careers-intro {
+  background: url(../img/careers.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .main-intro {
+    background: url(../img/careers@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and(max-width: 1106px){
+  .careers-intro {
+    background: url(../img/careers-tab.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  
+  
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    .main-intro {
+      background: url(../img/careers-tab@2x.jpg) no-repeat center center;
+      background-size: cover;
+    }
+  }
+  
+}
+
+
+
+@media screen and(max-width: 1106px){
+  .careers-intro {
+    background: url(../img/careers-tab.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  
+  
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    .main-intro {
+      background: url(../img/careers-tab@2x.jpg) no-repeat center center;
+      background-size: cover;
+    }
+  }
+  
+}

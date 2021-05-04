@@ -1,0 +1,153 @@
+.privileges__container {
+  margin-top: 72px;
+  margin-bottom: 12px;
+}
+
+
+.privileges__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+
+.privilege__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+  &:last-child {
+    margin-bottom: unset;
+  }
+  position: relative;
+}
+
+
+.privilege__item-inner {
+  max-width: 445px;
+}
+
+
+.privilege__item-img {
+  border-radius: 50%;
+}
+
+
+.privilege__item-header {
+  font-family: 'Space Mono';
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin-bottom: 24px;
+}
+
+
+.privilege__item-description {
+  @include description;
+  color:  #939CAA;
+}
+
+.privilege__item:nth-child(2n) {
+  flex-direction: row-reverse;
+
+}
+
+
+.privilege__item::before {
+  content: '';
+  width: 445px;
+  height: 445px;
+  position: absolute;
+  background: url(../img/main-circle.png) no-repeat center center;
+  background-size: cover;
+  top: 0;
+}
+
+
+.privilege__item:first-child::before {
+  right: -500px;
+}
+
+.privilege__item:nth-child(2n)::before {
+  left: -500px;
+}
+
+
+.privilege__item::after {
+  content: '';
+  width: 735px;
+  height: 139px;
+  position: absolute;
+  background: url(../img/about-main-arrow.svg) no-repeat center; 
+  background-size: cover;
+}
+
+
+.privilege__item:first-child::after {
+  bottom: 39px;
+  right: -165px;
+}
+
+
+.privilege__item:nth-child(2n)::after {
+  top: 0;
+  left: -550px;
+  transform: rotate(180deg);
+}
+
+
+@media screen and(max-width: 1106px){
+  .privilege__item, .privilege__item:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+
+  .privilege__item-inner {
+    margin-top: 56px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+
+  .privilege__item:first-child::after {
+    bottom: 281px;
+    left: -58px;
+  }
+
+
+  .privilege__item:nth-child(2n)::after {
+    left: -386px;
+  }
+
+}
+
+
+@media screen and(max-width: 573px){
+  .privilege__item-header {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.42857px;
+    margin-bottom: 32px;
+  }
+
+  .privilege__item-img {
+    max-width: 311px;
+  }
+
+  .privilege__item::before {
+    display: none;
+  }
+
+
+  .privilege__item:first-child::after {
+    left: 0;
+    top: 133px;
+  }
+
+
+  .privilege__item:nth-child(2n)::after {
+    left: unset;
+    right: 0;
+  }
+}

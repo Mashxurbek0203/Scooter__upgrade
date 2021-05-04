@@ -1,0 +1,61 @@
+.registration {
+  background:url(../../img/registration-circles.svg) no-repeat #495567;
+  background-position: right -163px top 150px;
+  background-size: contain;
+}
+
+.registration__container {
+  display: flex;
+  align-items: center;
+  padding-top: 102px;
+  padding-bottom: 102px;
+  justify-content: space-between;
+}
+
+
+.registration__title {
+  font-size: 48px;
+  line-height: 48px;
+  font-family: 'Space Mono';
+  letter-spacing: -2.14286px;
+  color: #fff;
+  max-width: 445px;
+}
+
+
+@media screen and(max-width: 1106px){
+  .registration {
+    background-size: cover;
+  }
+
+
+  .registration__container {
+    flex-direction: column;
+  }
+
+
+  .registration__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+
+  .registration__download-link:nth-child(1) .registration__download-img{
+    width: 113px;
+    height: 40px;
+  }
+
+
+  .registration__download-link:nth-child(2) .registration__download-img{
+    width: 130px;
+    height: 40px;
+  }
+}
+
+
+@media screen and(max-width: 573px){
+  .registration__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}

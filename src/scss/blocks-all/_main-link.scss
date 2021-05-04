@@ -1,0 +1,25 @@
+.main-link {
+  padding: 10px 35px;
+  background: #FCB72b;
+  color: #fff;
+  border: 2px solid transparent; 
+  transition-duration: 0.4s;
+
+  &:hover{
+    background: transparent;
+    color: #FCB72B;
+    border-color: #FCB72B;
+  }
+}
+
+
+
+@media screen and(max-width: 573px){
+  
+    &:active{
+      background: transparent;
+      color: #FCB72B;
+      border-color: #FCB72B;
+    }
+  
+}

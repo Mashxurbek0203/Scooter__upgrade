@@ -1,0 +1,33 @@
+.sub-description {
+  margin-bottom: 120px;
+}
+
+
+.sub-description__inner {
+  max-width: 1141px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.sub-description__header {
+  @include header;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  max-width: 351px;
+}
+
+.sub-description__text {
+  max-width: 445px;
+  margin-left: 30px;
+  flex-grow: 1;
+  @include description;
+  color: #939caa;
+}
+
+.sub-description__link {
+  margin-left: auto;
+}

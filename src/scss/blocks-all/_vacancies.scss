@@ -1,0 +1,22 @@
+.vacancies{
+  margin-bottom: 160px;
+}
+
+
+.vacancies__container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.vacancies__list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media screen and(max-width: 1106px){
+  .vacacies{
+    margin-bottom: 120px;
+  }
+}

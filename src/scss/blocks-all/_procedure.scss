@@ -1,0 +1,142 @@
+.procedure {
+  max-width: 100%;
+}
+
+.procedure__container::before {
+  content: '';
+  width: 974px;
+  height: 15px;
+  background: #E5ECF4;
+  position: absolute;
+  left: -165px;
+  top: 208px;
+}
+
+.procedure__container {
+  margin: 0 auto;
+  position: relative;
+}
+
+.procedure__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-top: 160px;
+  padding-bottom: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.procedure__item {
+  max-width: 350px;
+  margin-right: 30px;
+
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
+.procedure__header {
+  @include header;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  margin-bottom: 27px;
+}
+
+.procedure__description {
+  @include description;
+  color: #939CAA;
+  text-align: left;
+}
+
+
+.procedure__item::before {
+  content: '';
+  width: 96px;
+  height: 96px;
+  background: url(../img/process-locate.svg) no-repeat center center #FCB72b;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  display: block;
+  position: relative;
+}
+
+
+.procedure__item:nth-child(2)::before {
+  background: url(../../img/process-pick.svg) no-repeat center center #FCB72b;
+}
+
+
+.procedure__item:nth-child(3)::before {
+  background: url(../img/process-ride.svg) no-repeat center center #FCB72b;
+}
+
+
+@media screen and(max-width: 1106px){
+  .procedure__list {
+    flex-direction: column;
+  }
+
+  .procedure__item {
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .procedure__item::before {
+    margin: 0;
+    margin-right: 79px;
+    flex-shrink: 0;
+  }
+  
+
+  .procedure__text {
+    max-width: 398px;
+  }
+
+  .procedure__container::before {
+    width: 15px;
+    height: 512px;
+    left: 54px;
+    top: 0;
+  }
+}
+
+
+@media screen and(max-width: 573px){
+  .procedure__item {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+
+    &:last-child {
+      margin-bottom: unset;
+    }
+  }
+
+  .procedure__header, .procedure__description {
+    text-align: center;
+  }
+
+  .procedure__item::before {
+    margin-right: 0;
+  }
+
+  .procedure__container::before {
+    display: none;
+  }
+
+
+  .procedure__header {
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}

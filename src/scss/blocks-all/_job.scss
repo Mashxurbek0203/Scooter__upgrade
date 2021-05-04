@@ -1,0 +1,58 @@
+.job {
+  max-width: 100%;
+  background: #F2F5F9;
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  &:last-child {
+    margin-bottom: unset;
+  }
+}
+
+.job-inner {
+  flex-grow: 1;
+}
+
+
+.job__position {
+  @include header;
+  font-size: 24px;
+  line-height: 28px;
+  color: #495567;
+  letter-spacing: -1.07143px;
+  margin-bottom: 8px;
+}
+
+
+.job__location {
+  color: #495567;
+}
+
+.job__link {
+  padding: 14px 67.5px;
+}
+
+
+@media screen and(max-width: 573px ){
+  .job  {
+    flex-direction: column;
+    padding: 36px 32px 32px 32px;
+  }
+
+  .job-inner {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .job__position{
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.803571px;
+    margin-bottom: 4px;
+  }
+
+  .job__location {
+    font-size: 15px;
+  }
+}
